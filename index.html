@@ -7,7 +7,34 @@
     <title>Library</title>
 </head>
 <body>
-    
+    <ul class="booksList">
+    </ul>
+    <button id="openFormButton">Create Book</button>
+    <dialog>
+        <button id="closeFormButton">X</button>
+        <form id="newBook" method="dialog">
+            <div class="container">
+                <label for="bookName">Name of Book</label>
+                <input type="text" id="bookName" name="bookName">
+            </div>
+            <div class="container">
+                <label for="bookAuthor">Name of Author</label>
+                <input type="text" id="bookAuthor" name="bookAuthor">
+            </div>
+            <div class="container">
+                <label for="bookPages">Number of Pages</label>
+                <input type="number" step="1" id="bookPages" name="bookPages">
+            </div>
+            <div class="container">
+                <label for="bookRead">Have you read this book?</label>
+                <select id="bookRead" name="bookRead">
+                    <option value="yes">Yes</option>
+                    <option value="no" selected>No</option>
+                </select>
+            </div>
+            <button type="submit" for="newBook">Add Book</button>
+        </form>
+    </dialog>
 </body>
 <script src="./script.js"></script>
 </html>

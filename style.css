@@ -1,0 +1,17 @@
+dialog {
+    padding: 10px;
+}
+#closeFormButton {
+    display: flex;
+    margin-left: auto;
+    justify-content: end;
+}
+form, div.container {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    padding: 25px;
+    gap: 10px;
+}
